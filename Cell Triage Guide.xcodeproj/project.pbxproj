@@ -13,6 +13,11 @@
 		838797E1202BD1F2009406B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838797E0202BD1F2009406B2 /* Assets.xcassets */; };
 		838797E4202BD1F2009406B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838797E2202BD1F2009406B2 /* LaunchScreen.storyboard */; };
 		838797EF202BD1F2009406B2 /* Cell_Triage_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838797EE202BD1F2009406B2 /* Cell_Triage_GuideTests.swift */; };
+		83A141AF203BD246000E3B52 /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A141AE203BD246000E3B52 /* DeviceStatus.swift */; };
+		83AA0F2E203BAB08002BB286 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA0F2D203BAB08002BB286 /* About.swift */; };
+		83AA0F30203BAB32002BB286 /* Glossay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA0F2F203BAB32002BB286 /* Glossay.swift */; };
+		83AA0F32203BAD92002BB286 /* TriageGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA0F31203BAD92002BB286 /* TriageGuide.swift */; };
+		83C8BA752037E00700714536 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8BA742037E00700714536 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		838797EA202BD1F2009406B2 /* Cell Triage GuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cell Triage GuideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838797EE202BD1F2009406B2 /* Cell_Triage_GuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_Triage_GuideTests.swift; sourceTree = "<group>"; };
 		838797F0202BD1F2009406B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A141AE203BD246000E3B52 /* DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatus.swift; sourceTree = "<group>"; };
+		83AA0F2D203BAB08002BB286 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		83AA0F2F203BAB32002BB286 /* Glossay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glossay.swift; sourceTree = "<group>"; };
+		83AA0F31203BAD92002BB286 /* TriageGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageGuide.swift; sourceTree = "<group>"; };
+		83C8BA742037E00700714536 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../.Trash/HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,11 @@
 			children = (
 				838797D9202BD1F2009406B2 /* AppDelegate.swift */,
 				838797DB202BD1F2009406B2 /* ViewController.swift */,
+				83C8BA742037E00700714536 /* HomeViewController.swift */,
+				83AA0F31203BAD92002BB286 /* TriageGuide.swift */,
+				83AA0F2D203BAB08002BB286 /* About.swift */,
+				83AA0F2F203BAB32002BB286 /* Glossay.swift */,
+				83A141AE203BD246000E3B52 /* DeviceStatus.swift */,
 				838797DD202BD1F2009406B2 /* Main.storyboard */,
 				838797E0202BD1F2009406B2 /* Assets.xcassets */,
 				838797E2202BD1F2009406B2 /* LaunchScreen.storyboard */,
@@ -200,7 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				838797DC202BD1F2009406B2 /* ViewController.swift in Sources */,
+				83AA0F2E203BAB08002BB286 /* About.swift in Sources */,
+				83AA0F32203BAD92002BB286 /* TriageGuide.swift in Sources */,
 				838797DA202BD1F2009406B2 /* AppDelegate.swift in Sources */,
+				83AA0F30203BAB32002BB286 /* Glossay.swift in Sources */,
+				83C8BA752037E00700714536 /* HomeViewController.swift in Sources */,
+				83A141AF203BD246000E3B52 /* DeviceStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

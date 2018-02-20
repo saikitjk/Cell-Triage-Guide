@@ -1,24 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Cell_Triage_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ecg-xb-DM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="EsN-5Q-g9o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Efc-Nz-D8R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNI-6j-CXA" customClass="acceptButton">
+                                <rect key="frame" x="0.0" y="1030" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <segue destination="c94-ut-Jl6" kind="show" id="OHA-h9-507"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zNI-6j-CXA" firstAttribute="leading" secondItem="Efc-Nz-D8R" secondAttribute="leading" id="RBn-3K-GCs"/>
+                            <constraint firstAttribute="trailing" secondItem="zNI-6j-CXA" secondAttribute="trailing" id="WV0-lA-exS"/>
+                            <constraint firstItem="EsN-5Q-g9o" firstAttribute="top" secondItem="zNI-6j-CXA" secondAttribute="bottom" constant="100" id="nAN-g5-Bwb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9My-I5-O5N"/>
+                    <size key="freeformSize" width="375" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2922" y="-635"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="u7c-Yz-LJF">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c94-ut-Jl6" customClass="HomeViewController" customModule="Cell_Triage_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zwr-N9-6Sx"/>
+                        <viewControllerLayoutGuide type="bottom" id="yJr-cg-6Bq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OOW-oD-ADS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMk-HB-U1z">
+                                <rect key="frame" x="16" y="388" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.1507932297" green="0.68971680589999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Glossary">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uPm-7k-VEr" kind="show" id="MP0-tJ-1Lv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c0-mM-HC8">
+                                <rect key="frame" x="16" y="622" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.1507932297" green="0.68971680589999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mLY-9b-8XB" kind="show" id="Kve-oQ-J7L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-Te-9tj">
+                                <rect key="frame" x="16" y="194" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.1507932297" green="0.68971680589999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Triage Guide">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZLd-Kb-eBt" kind="show" id="beJ-Ui-kmn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QMk-HB-U1z" secondAttribute="trailing" id="3C7-iC-Ijp"/>
+                            <constraint firstItem="q0F-Te-9tj" firstAttribute="leading" secondItem="OOW-oD-ADS" secondAttribute="leadingMargin" id="KMZ-Y6-377"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q0F-Te-9tj" secondAttribute="trailing" id="LpS-FS-h1V"/>
+                            <constraint firstItem="5c0-mM-HC8" firstAttribute="leading" secondItem="OOW-oD-ADS" secondAttribute="leadingMargin" id="RKT-sW-UAh"/>
+                            <constraint firstItem="q0F-Te-9tj" firstAttribute="top" secondItem="Zwr-N9-6Sx" secondAttribute="bottom" constant="150" id="fhU-hs-ver"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5c0-mM-HC8" secondAttribute="trailing" id="n2v-Tk-mGi"/>
+                            <constraint firstItem="QMk-HB-U1z" firstAttribute="leading" secondItem="OOW-oD-ADS" secondAttribute="leadingMargin" id="tym-W9-QaI"/>
+                            <constraint firstItem="5c0-mM-HC8" firstAttribute="top" secondItem="QMk-HB-U1z" secondAttribute="bottom" constant="200" id="vLa-pS-He0"/>
+                            <constraint firstItem="QMk-HB-U1z" firstAttribute="top" secondItem="q0F-Te-9tj" secondAttribute="bottom" constant="160" id="zV9-QB-AJ3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDQ-bc-r8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1966" y="-777"/>
+        </scene>
+        <!--Device Status Controller-->
+        <scene sceneID="jr6-SA-iN6">
+            <objects>
+                <viewController storyboardIdentifier="DeviceStatusController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZLd-Kb-eBt" customClass="DeviceStatusController" customModule="Cell_Triage_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="omY-oY-RED"/>
+                        <viewControllerLayoutGuide type="bottom" id="tT2-1u-D22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aN0-Xk-r4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tix-te-8Hk">
+                                <rect key="frame" x="16" y="465" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="OFF"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBV-Kn-G8w">
+                                <rect key="frame" x="16" y="334" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="ON"/>
+                                <connections>
+                                    <segue destination="QkD-lb-e1r" kind="show" id="qry-M0-oym"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frK-xu-fsO">
+                                <rect key="frame" x="16" y="606" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="c94-ut-Jl6" kind="show" id="7PW-sm-wao"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yBV-Kn-G8w" firstAttribute="top" secondItem="omY-oY-RED" secondAttribute="bottom" constant="290" id="9MI-SM-qjC"/>
+                            <constraint firstItem="yBV-Kn-G8w" firstAttribute="leading" secondItem="aN0-Xk-r4g" secondAttribute="leadingMargin" id="EH6-sV-Ynf"/>
+                            <constraint firstItem="frK-xu-fsO" firstAttribute="top" secondItem="Tix-te-8Hk" secondAttribute="bottom" constant="100" id="JJr-xR-XES"/>
+                            <constraint firstItem="frK-xu-fsO" firstAttribute="leading" secondItem="aN0-Xk-r4g" secondAttribute="leadingMargin" id="Mf7-FM-qo2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tix-te-8Hk" secondAttribute="trailing" id="WVY-bK-c9F"/>
+                            <constraint firstItem="Tix-te-8Hk" firstAttribute="top" secondItem="yBV-Kn-G8w" secondAttribute="bottom" constant="90" id="YUJ-Ae-vKp"/>
+                            <constraint firstItem="Tix-te-8Hk" firstAttribute="leading" secondItem="aN0-Xk-r4g" secondAttribute="leadingMargin" id="k7i-aL-jJ6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBV-Kn-G8w" secondAttribute="trailing" id="opJ-GY-7v0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="frK-xu-fsO" secondAttribute="trailing" id="uAB-ye-dQA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLy-vQ-Yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="-1630"/>
+        </scene>
+        <!--Triage Guide Controller-->
+        <scene sceneID="4pH-tG-cHK">
+            <objects>
+                <viewController storyboardIdentifier="TriageGuideController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QkD-lb-e1r" customClass="TriageGuideController" customModule="Cell_Triage_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o1i-cS-Lmb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qzh-1l-KFK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mfH-HI-iON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kf-DR-xzm">
+                                <rect key="frame" x="16" y="299" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Patrolman"/>
+                                <connections>
+                                    <segue destination="6mv-wv-etm" kind="show" id="Lk3-ND-210"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB2-Nv-Eye">
+                                <rect key="frame" x="16" y="400" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Investigator"/>
+                                <connections>
+                                    <segue destination="3OA-GI-Y9i" kind="show" id="MsG-5v-Ud9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcO-gi-N1S">
+                                <rect key="frame" x="16" y="501" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Detective"/>
+                                <connections>
+                                    <segue destination="a5g-IL-745" kind="show" id="ZZO-fz-oNJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xop-yX-Abh">
+                                <rect key="frame" x="16" y="642" width="343" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="ZLd-Kb-eBt" kind="show" id="LOH-Sr-eYa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Kf-DR-xzm" firstAttribute="leading" secondItem="mfH-HI-iON" secondAttribute="leadingMargin" id="AQV-tK-DqL"/>
+                            <constraint firstItem="fB2-Nv-Eye" firstAttribute="top" secondItem="1Kf-DR-xzm" secondAttribute="bottom" constant="60" id="B17-Zm-D6t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fB2-Nv-Eye" secondAttribute="trailing" id="BSj-tu-21d"/>
+                            <constraint firstItem="1Kf-DR-xzm" firstAttribute="top" secondItem="o1i-cS-Lmb" secondAttribute="bottom" constant="255" id="Ckk-fx-WMJ"/>
+                            <constraint firstItem="JcO-gi-N1S" firstAttribute="leading" secondItem="mfH-HI-iON" secondAttribute="leadingMargin" id="H5Z-Oa-6Om"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JcO-gi-N1S" secondAttribute="trailing" id="PSR-1w-oz3"/>
+                            <constraint firstItem="JcO-gi-N1S" firstAttribute="top" secondItem="fB2-Nv-Eye" secondAttribute="bottom" constant="60" id="TXG-xm-dJa"/>
+                            <constraint firstItem="Xop-yX-Abh" firstAttribute="leading" secondItem="mfH-HI-iON" secondAttribute="leadingMargin" id="ZzS-os-wgA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Kf-DR-xzm" secondAttribute="trailing" id="aVJ-f8-eGH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xop-yX-Abh" secondAttribute="trailing" id="l5o-5l-6AY"/>
+                            <constraint firstItem="fB2-Nv-Eye" firstAttribute="leading" secondItem="mfH-HI-iON" secondAttribute="leadingMargin" id="t1w-w5-gCX"/>
+                            <constraint firstItem="Xop-yX-Abh" firstAttribute="top" secondItem="JcO-gi-N1S" secondAttribute="bottom" constant="100" id="x2T-2M-hSA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdX-lf-FWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="-2260"/>
+        </scene>
+        <!--Detective Controller-->
+        <scene sceneID="w1q-WS-CU9">
+            <objects>
+                <viewController storyboardIdentifier="DetectiveController" id="a5g-IL-745" customClass="DetectiveController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fVc-jx-bzD"/>
+                        <viewControllerLayoutGuide type="bottom" id="c5q-ld-fF0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d6A-Ls-6Yv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSu-qb-mJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="-2688"/>
+        </scene>
+        <!--Patrolman Controller-->
+        <scene sceneID="BFe-ie-cbM">
+            <objects>
+                <viewController storyboardIdentifier="PatrolmanController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6mv-wv-etm" customClass="PatrolmanController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WRd-IY-E7W"/>
+                        <viewControllerLayoutGuide type="bottom" id="aT4-qp-DX0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cr0-uW-gMc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dte-Hk-U8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="-2970"/>
+        </scene>
+        <!--Investigator Controller-->
+        <scene sceneID="Ry9-Rc-1tz">
+            <objects>
+                <viewController storyboardIdentifier="InvestigatorController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3OA-GI-Y9i" customClass="InvestigatorController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ezn-ak-Ml3"/>
+                        <viewControllerLayoutGuide type="bottom" id="neT-yX-F5g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tX5-qR-8WT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh5-6W-ZLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="-2699"/>
+        </scene>
+        <!--Glossary Controller-->
+        <scene sceneID="wZw-Ge-FtM">
+            <objects>
+                <viewController storyboardIdentifier="GlossaryController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uPm-7k-VEr" customClass="GlossaryController" customModule="Cell_Triage_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bpb-Ms-qUI"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0l-oK-sTX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iah-B1-Z1R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ew7-eL-E9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="-712"/>
+        </scene>
+        <!--About Controller-->
+        <scene sceneID="VvX-Zl-tEE">
+            <objects>
+                <viewController storyboardIdentifier="AboutController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mLY-9b-8XB" customClass="AboutController" customModule="Cell_Triage_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F7D-l8-HNG"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZ2-4T-ri1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5J-Pg-FSL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoq-sy-2rg">
+                                <rect key="frame" x="16" y="664" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="c94-ut-Jl6" kind="show" id="JPv-BQ-pYs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hoq-sy-2rg" secondAttribute="trailing" id="cNr-Dr-R5p"/>
+                            <constraint firstItem="hoq-sy-2rg" firstAttribute="top" secondItem="F7D-l8-HNG" secondAttribute="bottom" constant="620" id="ipX-xC-fVx"/>
+                            <constraint firstItem="hoq-sy-2rg" firstAttribute="leading" secondItem="A5J-Pg-FSL" secondAttribute="leadingMargin" id="kBa-Td-rbx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Td9-VD-6Rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1190" y="-297"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qry-M0-oym"/>
+        <segue reference="LOH-Sr-eYa"/>
+        <segue reference="7PW-sm-wao"/>
+    </inferredMetricsTieBreakers>
 </document>
