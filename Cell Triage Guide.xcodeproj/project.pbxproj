@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8345077E204A18AA000415C4 /* InvestigatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345077D204A18AA000415C4 /* InvestigatorController.swift */; };
+		83450780204A1963000415C4 /* DetectiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345077F204A1963000415C4 /* DetectiveController.swift */; };
+		83450782204A20BF000415C4 /* symbiamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450781204A20BF000415C4 /* symbiamController.swift */; };
+		8369BBF6203E399100B8AF5B /* PatrolmanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369BBF5203E399100B8AF5B /* PatrolmanController.swift */; };
+		8369BBFA203E5C8900B8AF5B /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369BBF9203E5C8900B8AF5B /* SwipingController.swift */; };
+		8369BBFC203E688B00B8AF5B /* iOSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369BBFB203E688B00B8AF5B /* iOSController.swift */; };
 		838797DA202BD1F2009406B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838797D9202BD1F2009406B2 /* AppDelegate.swift */; };
 		838797DC202BD1F2009406B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838797DB202BD1F2009406B2 /* ViewController.swift */; };
 		838797DF202BD1F2009406B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838797DD202BD1F2009406B2 /* Main.storyboard */; };
@@ -18,6 +24,8 @@
 		83AA0F30203BAB32002BB286 /* Glossay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA0F2F203BAB32002BB286 /* Glossay.swift */; };
 		83AA0F32203BAD92002BB286 /* TriageGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA0F31203BAD92002BB286 /* TriageGuide.swift */; };
 		83C8BA752037E00700714536 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8BA742037E00700714536 /* HomeViewController.swift */; };
+		83D1454420473B0000854DB9 /* AndroidController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1454320473B0000854DB9 /* AndroidController.swift */; };
+		83D1454820477E0A00854DB9 /* WinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1454720477E0A00854DB9 /* WinController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8345077D204A18AA000415C4 /* InvestigatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigatorController.swift; sourceTree = "<group>"; };
+		8345077F204A1963000415C4 /* DetectiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectiveController.swift; sourceTree = "<group>"; };
+		83450781204A20BF000415C4 /* symbiamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = symbiamController.swift; sourceTree = "<group>"; };
+		8369BBF5203E399100B8AF5B /* PatrolmanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatrolmanController.swift; sourceTree = "<group>"; };
+		8369BBF9203E5C8900B8AF5B /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		8369BBFB203E688B00B8AF5B /* iOSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSController.swift; sourceTree = "<group>"; };
 		838797D6202BD1F2009406B2 /* Cell Triage Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cell Triage Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838797D9202BD1F2009406B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838797DB202BD1F2009406B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +60,8 @@
 		83AA0F2F203BAB32002BB286 /* Glossay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glossay.swift; sourceTree = "<group>"; };
 		83AA0F31203BAD92002BB286 /* TriageGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageGuide.swift; sourceTree = "<group>"; };
 		83C8BA742037E00700714536 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../.Trash/HomeViewController.swift; sourceTree = "<group>"; };
+		83D1454320473B0000854DB9 /* AndroidController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidController.swift; sourceTree = "<group>"; };
+		83D1454720477E0A00854DB9 /* WinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,14 @@
 				838797E0202BD1F2009406B2 /* Assets.xcassets */,
 				838797E2202BD1F2009406B2 /* LaunchScreen.storyboard */,
 				838797E5202BD1F2009406B2 /* Info.plist */,
+				8369BBF5203E399100B8AF5B /* PatrolmanController.swift */,
+				8369BBF9203E5C8900B8AF5B /* SwipingController.swift */,
+				8369BBFB203E688B00B8AF5B /* iOSController.swift */,
+				83D1454320473B0000854DB9 /* AndroidController.swift */,
+				83D1454720477E0A00854DB9 /* WinController.swift */,
+				8345077D204A18AA000415C4 /* InvestigatorController.swift */,
+				8345077F204A1963000415C4 /* DetectiveController.swift */,
+				83450781204A20BF000415C4 /* symbiamController.swift */,
 			);
 			path = "Cell Triage Guide";
 			sourceTree = "<group>";
@@ -214,12 +238,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8369BBFA203E5C8900B8AF5B /* SwipingController.swift in Sources */,
 				838797DC202BD1F2009406B2 /* ViewController.swift in Sources */,
 				83AA0F2E203BAB08002BB286 /* About.swift in Sources */,
+				8369BBFC203E688B00B8AF5B /* iOSController.swift in Sources */,
+				83D1454420473B0000854DB9 /* AndroidController.swift in Sources */,
 				83AA0F32203BAD92002BB286 /* TriageGuide.swift in Sources */,
 				838797DA202BD1F2009406B2 /* AppDelegate.swift in Sources */,
+				83450782204A20BF000415C4 /* symbiamController.swift in Sources */,
+				8345077E204A18AA000415C4 /* InvestigatorController.swift in Sources */,
 				83AA0F30203BAB32002BB286 /* Glossay.swift in Sources */,
+				83450780204A1963000415C4 /* DetectiveController.swift in Sources */,
+				83D1454820477E0A00854DB9 /* WinController.swift in Sources */,
 				83C8BA752037E00700714536 /* HomeViewController.swift in Sources */,
+				8369BBF6203E399100B8AF5B /* PatrolmanController.swift in Sources */,
 				83A141AF203BD246000E3B52 /* DeviceStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

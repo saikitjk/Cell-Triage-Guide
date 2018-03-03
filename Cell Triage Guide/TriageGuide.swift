@@ -72,7 +72,7 @@ class TriageGuideController: UIViewController{
         AskingRoleTextView.topAnchor.constraint(equalTo: AskingToCheckPasswordView.bottomAnchor, constant: 2).isActive = true
         AskingRoleTextView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         AskingRoleTextView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        AskingRoleTextView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        AskingRoleTextView.heightAnchor.constraint(equalToConstant: 70).isActive = true
         
     }
     

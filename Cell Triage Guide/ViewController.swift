@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     //DisclaimerContent
     let descriptionContent: UITextView = {
         let textView = UITextView ()
-        textView.text = "This application is to aid you in handling cell devices that are found on-scene. However, you need to follow supervisor's instruction throughout the process of handling mobile devices"
+        textView.text = "This application is meant to augement your department's current standard operating procedures when dealing with triaging mobile, digital evidence. \nPlease consult with your agency's forensic examiner if you have any questions or concerns"
         textView.isEditable = false;
         textView.isSelectable = false;
         textView.backgroundColor = UIColor.clear
